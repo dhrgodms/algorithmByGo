@@ -1,18 +1,19 @@
-package main
+package algorithm
 
 import "fmt"
 
 func main(){
 	var a int
-	var result string
-	k:=0
+	k:=1
 
 	fmt.Scanf("%d", &a)
-	for k<a {
-		for j:=k; j>0;j-- {
+
+	for k<=a {
+		result:=""
+		for i:=a-k; i>0; i--{
 			result += " "
 		}
-		for i:=0; i<k; i++{
+		for j:=1; j<=k; j++{
 			result += "*"
 		}
 		fmt.Println(result)
